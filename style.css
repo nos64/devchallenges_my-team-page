@@ -1,0 +1,270 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+body {
+  min-width: 375px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FAFAFA;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, p, ul {
+  margin: 0;
+}
+
+.container {
+  max-width: 952px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+  margin-left: 10px;
+}
+
+.header__title {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.header__text {
+  width: 439px;
+  height: 120px;
+}
+
+.text-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text-content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.team__wrapper {
+  margin-top: 96px;
+  margin-bottom: 157px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+  flex-wrap: wrap;
+  gap: 126px 67px; 
+  justify-items: center;
+  padding: 0;
+}
+
+.team__member:nth-child(2) {
+  position: relative;
+  top: 132px;
+}
+
+.team__member:nth-child(5) {
+  position: relative;
+  top: 132px;
+  margin-bottom: 115px;
+}
+
+.team__position {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  position: relative;
+  left: 260px;
+  top: 15px;
+}
+
+.team__photo {
+  width: 237px;
+  height: auto;
+}
+
+.team__name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.footer__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color:#A9A9A9;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 910px) {
+  .team__member:nth-child(2n) {
+    position: relative;
+    top: 64px;
+  }
+  
+  .team__member:nth-child(5) {
+    position: relative;
+    top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__wrapper {
+    display: block;
+    margin-top: 71px;
+    margin-left: 10px;
+  }
+
+  .header__title {
+    margin-bottom: 38px;
+  }
+  
+  .team__wrapper {
+    margin-top: 38px;
+    margin-bottom: 134px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 64px 26px; 
+  }
+  
+  .team__position {
+    font-size: 10px;
+    line-height: 13px;
+    left: 215px;
+    top: 15px;
+  }
+  
+  .team__photo {
+    width: 200px;
+    height: auto;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .header__wrapper {
+    display: block;
+    margin-top: 71px;
+    margin-left: 10px;
+  }
+
+  .header__title {
+    margin-bottom: 38px;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .header__wrapper {
+    display: block;
+    margin-top: 71px;
+    margin-left: 10px;
+  }
+
+  .header__title {
+    margin-bottom: 38px;
+  }
+  
+  .header__text {
+    width: 333px;
+  }
+  
+  .text-content {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .team__wrapper {
+    margin-top: 38px;
+    margin-bottom: 134px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 64px 26px; 
+  }
+  
+  .team__position {
+    font-size: 10px;
+    line-height: 13px;
+    left: 160px;
+    top: 15px;
+  }
+  
+  .team__photo {
+    width: 139px;
+    height: auto;
+  }
+  
+  .team__name {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .footer__text {
+    font-size: 12px;
+
+  }
+}
+
+@media (max-width: 360px) {
+  .team__wrapper {
+    display: block;
+    margin-top: 38px;
+    margin-bottom: 134px;
+  }
+  
+  .team__member{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+  }
+
+  .team__member:nth-child(2n) {
+    position: static;
+  }
+  
+  .team__member:nth-child(5) {
+    position: static;
+  }
+
+
+  .team__photo {
+    width: 139px;
+    height: auto;
+  }
+  
+  .footer__text {
+    font-size: 10px;
+  }
+}
